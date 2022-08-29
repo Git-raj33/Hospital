@@ -1,0 +1,24 @@
+package com.patient.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.patient.entity.patient;
+
+@Service
+public class patient_Service {
+
+	@Autowired
+	private patient_Service repo;
+	
+	public patient_Service saveRegister(patient register) {
+		return repo.save(register);
+	}
+		
+		public patient fetchRegisterById(int id) {
+		return	repo.findById(id);
+		}
+		
+		public patient fetchRegisterByIdAndName(int id,String name) {
+			return	repo.findByIdAndName(id, name);
+			}
+}

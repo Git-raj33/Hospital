@@ -1,0 +1,13 @@
+package com.doctor.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.doctor.repository.doctor_Repository;
+
+@Service
+public class doctor_Service {
+	
+	@Autowired
+	private doctor_Repository repo;
+
+}

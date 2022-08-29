@@ -1,0 +1,12 @@
+package com.doctor.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.doctor.repository.doctor_Repository;
+
+public class doctor_Service {
+	
+	@Autowired
+	doctor_Repository repo;
+
+}
